@@ -1,0 +1,291 @@
+<html>
+<head>
+
+<script>
+function district()
+{
+	if (document.getElementById("selectbox").value == "1")
+		{
+			//alert("hi");
+			window.location.href = "list of photographers.html";
+		}
+	if (document.getElementById("selectbox").value == "2")
+		{
+			//alert("hello");
+			window.location.href = "list of ernakulam photographers.html";
+		}
+}
+</script>
+
+<title>HOME</title>
+
+<style>
+	@font-face
+		{
+			font-family:Dacilla;
+			src:url("Midnight Bangkok.ttf");
+		}
+		
+	body
+	{
+		background:#151520;
+		//background:#151520;
+		//border:1px solid white;#151520
+	}
+
+/*border-0*/
+	#border0  img
+	{
+		height:8px;
+		width:100%;
+		float:left;
+		position:absolute;
+		top:0%;
+		left:0%;
+	}
+
+/*logo*/
+
+
+	#d1
+	{
+		height:12%;
+		background:black;
+		width:100%;
+		
+	}
+	
+	#logo
+	{
+	
+	}
+	#logo img
+	{
+		//float:left;
+		height:80px;
+		position:absolute;
+		top:px;
+		left:10px;
+	}
+	
+/*menulist*/
+	#menu
+	{
+		position:absolute;
+		top:27px;
+		right:5px;
+	}
+	#menu ul
+	{
+		float:right;
+	}
+	#menu ul li
+	{	
+		display:inline;
+		padding:10px;
+		
+	}
+	#menu ul li a
+	{
+		font-family: fantasy;
+		text-decoration:none;
+		color:#e6e600;
+		font-size:25px;
+		//padding:20px;
+		//border:1px solid yellow;
+		
+	}
+	#menu ul li a:active
+	{
+		color:red;
+	}
+	#menu ul li a:hover
+	{
+		color:white;
+	}
+	
+/*welcome*/
+	#welcome
+	{
+		position:absolute;
+		top:2px;
+		left:42%;
+		color:white;
+		font-size:30px;
+		font-family:Verdana;
+	}
+	
+/*division-2*/
+	
+	
+/*leftad*/
+	.leftad img
+	{
+		float:left;
+		position:absolute;
+		top:17%;
+		max-height:80%;
+		border:5px solid #E14321;
+		opacity:1;
+	}
+	.leftadname
+	{
+		color:#ECE621;
+		position:absolute;
+		top:20%;
+		left:5%;
+		opacity:0.0;
+	}
+	.leftad:hover .leftadname
+	{	
+		color:black;
+		opacity:1.0;
+		font-size:14px;
+		font-weight:bold;
+	}
+	
+/*district selection*/
+	#selectionform
+	{
+		text-align:center;
+	}
+	#selectionform2
+	{
+		position:absolute;
+		left:43%;
+		top:40%;
+	}
+	#selectbox
+	{
+		width:200px;
+		height:25px;
+		color:white;
+		background:black;
+	}
+	#district
+	{
+		position:absolute;
+		left:44.5%;
+		top:32%;
+		font-family:Trebuchet MS;
+		font-size:25px;
+		color:#1568D3;	
+	}
+	.districtlist
+	{
+	
+	}
+	.gobutton
+	{
+			
+	}
+	.gobut
+	{
+		/*font-size:20px;
+		background:#cccc00;
+		height:35px;
+		width:200px;
+		//border:3px solid white;*/
+		
+		background: linear-gradient(to bottom,#499f43 0,#048003 100%);
+		text-align: center;
+		color: #fff;
+		border-radius: 6px;
+		text-shadow: 1px 1px rgba(0,0,0,.5);
+		cursor: pointer;
+		order: 0;
+		outline: 0;
+	}
+		
+/*rightad*/
+	
+	.rightad img
+	{
+		position:absolute;
+		top:17%;
+		right:0.6%;
+		max-height:80%;
+		border:5px solid #E14321;
+		opacity:1;
+	}
+	.rightadname
+	{	
+		color:#ECE621;
+		position:absolute;
+		right:5%;
+		top:19.3%;;
+		opacity:0;
+	}
+	.rightad:hover .rightadname
+	{	
+		color:black;
+		opacity:1;
+		font-size:14px;
+		font-weight:bold;
+	}
+</style>
+</head>
+
+<body>
+<!--**********************Border**********************-->
+	<div id="border0">
+		<img id="borderimg" src="Photo Album\download.png"></img>
+	</div>
+<!--**********************HOME BUTTONS**********************-->
+<div id="d1">
+	<div id="logo">
+		<a href="home_1.html">
+			<img src="3logo-2947_grande.jpg"  alt="source error"></img>
+		</a>
+	</div>
+	
+	<div id="menu">
+		<ul>
+			<li><a href="#" style="color:Green;">HOME</a></li>
+			<li><a href="contact_1.html">CONTACT</a></li>
+			<li><a href="Register_1.html">REGISTER</a></li>
+		<ul>
+	</div>
+	
+	<div id="welcome">
+		<h2>WELCOME</h2>
+	</div>
+</div>
+
+
+<div id="d2">
+
+	<div class="leftad">
+		<img src="photos\Candid-Photography-In-Madurai-13-1-910x1410.jpg" alt="source error" 
+		href=""></img>	
+		<div class="leftadname"><p>JAIHIND PHOTOGRAPHY-MADURAI</p></div>
+	</div>
+	
+	<div id="selectionform">
+		<p id="district">Select District</p>
+		
+		<div id="selectionform2">
+			<form class="districtlist">
+				<select id="selectbox">
+					<option  value="0">Select..</option>
+					<option  value="1">Coimbatore</option>
+					<option  value="2">Ernakulam</option>
+					<option  value="3">Trichy</option>		
+				</select>
+			</form>
+			
+			<div class="gobutton">
+				<button onclick="district()" type="submit" class="gobut"><b>Search</b></button>
+			</div>
+		</div>
+	</div>
+	
+	<div class="rightad">
+		<img src="photos/candid-wedding-photography-in-ponnamaravathi-31-768x1188.jpg" alt="source error" 
+		href=""></img>	
+		<div class="rightadname"><p>JAIHIND PHOTOGRAPHY-MADURAI</p></div>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>REGISTRATION</title>
+<style>
+	
+	body
+	{
+		background:#151520;#FF9027;
+		//background:url("regpagebg.jpeg")
+	}
+	#note
+	{
+		color:yellow;
+		font-size:30px;
+		position:absolute;
+		top:8%;
+		left:33%;
+	}
+	#d11
+	{
+		border:2px solid black;
+		width:600px;
+		height:367px;
+		position:absolute;
+		top: 30%;
+		left:30%;
+	}
+	
+/*Register form*/
+	#d11
+	{
+		//border:0px 0px 2px 0px solid black;
+	}
+
+	#regform
+	{
+		height:303px;
+		padding:2px 20px 62px 35px;
+		background-color:rgb(19, 236, 73);
+	}
+	#topic
+	{
+		text-align:center;
+		font-size:30px;
+		font-weight:bold;
+	}
+	
+	input[type=text]
+	{
+		font-size:20px;
+		font-weight:bold;
+		padding: 15px;
+		margin: 5px 1px 5px 135px;
+		border: 2px solid green;
+		
+	}
+	input[type=tel]
+	{
+		font-size:20px;
+		font-weight:bold;
+		padding: 15px;
+		margin: 10px 25px;
+		border: 2px solid green;
+	}
+	button
+	{
+		width:100px;
+		padding:10px;
+		margin:30px 15px 5px 100px;
+		border:2px solid orange;
+	}
+</style>
+</head>
+
+<body>
+<div id="note"><center><h3>Register here ! <br>We will reach you through a Call</h3><center></div>
+<div id="d11">
+	<form method="post" id="regform">
+		<a id="topic"><p>REGISTRATION FORM</p><a>
+		
+		
+		<label class="list"><b>NAME:</b></label>
+			<input name="namebox" class="box1" id="nameboxx" type="text" autofocus required>
+			<span id="spn1"></span>
+		<br>
+		
+		<label class="list"><b>CONTACT NUMBER :</b></label>
+			<input name="numbox" class="box2" id="numboxx" type="tel" required>
+			<span id="spn2"></span>
+		<br>
+		
+		<button  id="submitbutton" onclick="validation()" value="1">SUBMIT</button>
+		
+	</form>
+		<button id="cancelbutton" onclick="window.location.href='Home_1.html';">
+		CLOSE</button>
+		<!--onclick="document.getElementById('d11').style.display='none'"-->
+</div>
+
+</body>
+
+
+<script>
+	function validation()
+	{
+		/*if(document.getElementById("submitbutton").value =="1")
+		{
+			alert("REGESTRATION SUCCESSFUL");
+		}
+	}*/
+		
+		var temp=1;
+			if(document.getElementById("nameboxx").value == "")
+			{
+				//document.getElementById("spn1").innerHTML="<b><center><font color=red>Please provide your Name!</font></center></b>";
+				alert("Please provide your Name!");
+				temp=0;
+			}
+			 else if(document.getElementById("numboxx").value == "")
+			{
+				//document.getElementById("spn2").innerHTML="<b><center><font color=red>Please provide your Name!</font></center></b>";
+				alert("Please provide your Contact Name!");
+				temp=0;
+			}
+			if(temp=="1")
+			{
+				alert("Registered Successful");
+			}
+		}
+		
+	
+</script>
+</html>

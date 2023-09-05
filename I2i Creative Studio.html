@@ -1,0 +1,673 @@
+<html>
+<head>
+<title>I2i Creative Studio</title>
+
+<style>
+body
+	{
+		background:#151520;gray;
+	}
+/*border-0*/
+	#border0  img
+	{
+		height:8px;
+		width:100%;
+		float:left;
+		position:absolute;
+		top:0%;
+		left:0%;
+	}
+
+/*logo*/
+	#d111
+	{
+		height:12%;
+		background:black;
+		width:100%;
+		//position:fixed;
+	}
+	#logo img
+	{
+		height:80px;
+		position:absolute;
+		top:px;
+		left:10px;
+	}
+	
+/*menulist*/
+	#menu
+	{
+		position:absolute;
+		top:27px;
+		right:5px;
+	}
+	#menu ul
+	{
+		float:right;
+	}
+	#menu ul li
+	{	
+		display:inline;
+		padding:10px;
+		
+	}
+	#menu ul li a
+	{
+		font-family: fantasy;
+		text-decoration:none;
+		color:#e6e600;
+		font-size:25px;
+		//padding:20px;
+		//border:1px solid yellow;
+		
+	}
+	#menu ul li a:active
+	{
+		color:red;
+	}
+	#menu ul li a:hover
+	{
+		color:white;
+	}
+	
+/*welcome*/
+	#welcome
+	{
+		position:absolute;
+		top:2px;
+		left:42%;
+		color:white;
+		font-size:30px;
+		font-family:Verdana;
+	}
+	
+/*This Page*/
+/*background top pic */
+	#view1 img
+	{
+		height: 58%;
+		width: 63%;
+		position: absolute;
+		
+		float:left;
+		position:absolute;
+		top:15%;
+		left:19%;
+		
+		opacity: 0.6;
+		border-radius:2px;
+		background:black;
+	}
+	#view1 img:hover
+	{
+		opacity:0.1;
+	}
+	#info1
+	{
+		//opacity:0.5;
+	}
+	#info1:hover.#view1 img
+	{
+		opacity:0.1;
+	}
+	#info1 h3
+	{
+		font-family:Arial;
+		color:white;
+		font-size:40px;
+		
+		float:left;
+		position:absolute;
+		top:18%;
+		left:21%;
+	}
+	.contact
+	{
+		color:white;
+		font-size:px;
+		
+		float:left;
+		position:absolute;
+		top:50%;
+		left:21%;
+	}
+	.place
+	{
+		color:white;
+		font-size:px;
+		
+		float:left;
+		position:absolute;
+		top:55%;
+		left:21%;
+	}
+	.work
+	{
+		color:white;
+		font-size:px;
+		
+		float:left;
+		position:absolute;
+		top:65%;
+		left:21%;
+	}
+/*border-1*/
+	#border1  img
+	{
+		height:7px;
+		width:63%;
+		float:left;
+		position:absolute;
+		top:76%;
+		left:19%;
+	}
+	
+/*border-3*/
+	#border3  img
+	{
+		height:10px;
+		width:100%;
+		float:left;
+		position:absolute;
+		top:380.5%;
+		left:0%;
+	}
+	
+/*border-2*/
+	#border2  img
+	{
+		height:10px;
+		width:100%;
+		float:left;
+		position:absolute;
+		top:172%;
+		left:0%;
+	}
+	
+	
+/*Pics*/
+	#pic1
+	{
+		height: 25%;
+		width: 20%;
+		float:left;
+		position:absolute;
+		top:80%;
+		left:19%;
+		border:2px solid white;
+	}
+	#pic2
+	{
+		height: 25%;
+		width: 20%;
+		float:left;
+		position:absolute;
+		top:80%;
+		left:40.5%;
+		border:2px solid white;
+	}
+	#pic3
+	{
+		height: 25%;
+		width: 20%;
+		float:left;
+		position:absolute;
+		top:80%;
+		left:62%;
+		border:2px solid white;
+	}
+	#pic4
+	{
+		height: 25%;
+		width: 20%;
+		float:left;
+		position:absolute;
+		top:108.5%;
+		left:19%;
+		border:2px solid white;
+	}
+	#pic5
+	{
+		height: 25%;
+		width: 20%;
+		float:left;
+		position:absolute;
+		top:108.5%;
+		left:40.5%;
+		border:2px solid white;
+	}
+	#pic6
+	{
+		height: 25%;
+		width: 20%;
+		float:left;
+		position:absolute;
+		top:108.5%;
+		left:62%;
+		border:2px solid white;
+	}
+	#pic7
+	{
+		height: 25%;
+		width: 20%;
+		float:left;
+		position:absolute;
+		top:137%;
+		left:19%;
+		border:2px solid white;
+	}
+	#pic8
+	{
+		height: 25%;
+		width: 20%;
+		float:left;
+		position:absolute;
+		top:137%;
+		left:40.5%;
+		border:2px solid white;
+	}
+	#pic9
+	{
+		height: 25%;
+		width: 20%;
+		float:left;
+		position:absolute;
+		top:137%;
+		left:62%;
+		border:2px solid white;
+	}
+	.morebuttonclass,.backbuttonclass,.backbuttonclass2,.backbuttonclass3
+	{
+		width:150px;
+		height:30px;
+		background: linear-gradient(to bottom,#499f43 0,#048003 100%);  //button white outline
+		text-align: center;
+		color: #fff;
+		border-radius: 6px;
+		text-shadow: 1px 1px rgba(0,0,0,.5);
+		cursor: pointer;
+		outline: 0;
+	}
+	#backbuttonid
+	{
+		position:absolute;
+		top:15%;
+		left:4%;
+	}
+	#backbuttonid2
+	{
+		position:absolute;
+		top:165%;
+		left:20%;
+	}
+	#backbuttonid3
+	{
+		position:absolute;
+		top:373.5%;
+		left:20%;
+	}
+	#morebuttonid
+	{
+		position:absolute;
+		top:165%;
+		right:20%;
+	}
+
+	#morepics
+	{
+		display:none;
+	}
+	#pic10
+	{
+		height: 25%;
+		width: 20%;
+		float:left;
+		position:absolute;
+		top:171.5%;
+		left:19%;
+		border:2px solid white;
+	}
+	#pic11
+	{
+		height: 25%;
+		width: 20%;
+		float:left;
+		position:absolute;
+		top:171.5%;
+		left:40.5%;
+		border:2px solid white;
+	}
+	#pic12
+	{
+		height: 25%;
+		width: 20%;
+		float:left;
+		position:absolute;
+		top:171.5%;
+		left:62%;
+		border:2px solid white;
+	}
+	#pic13
+	{
+		height: 40%;
+		width: 20%;
+		float:left;
+		position:absolute;
+		top:200%;
+		left:19%;
+		border:2px solid white;
+	}
+	#pic14
+	{
+		height: 40%;
+		width: 20%;
+		float:left;
+		position:absolute;
+		top:200%;
+		left:40.5%;
+		border:2px solid white;
+	}
+	#pic15
+	{
+		height: 40%;
+		width: 20%;
+		float:left;
+		position:absolute;
+		top:200%;
+		left:62%;
+		border:2px solid white;
+	}
+	#pic16
+	{
+		height: 40%;
+		width: 20%;
+		float:left;
+		position:absolute;
+		top:243.5%;
+		left:19%;
+		border:2px solid white;
+	}
+	#pic17
+	{
+		height: 40%;
+		width: 20%;
+		float:left;
+		position:absolute;
+		top:243.5%;
+		left:40.5%;
+		border:2px solid white;
+	}
+	#pic18
+	{
+		height: 40%;
+		width: 20%;
+		float:left;
+		position:absolute;
+		top:243.5%;
+		left:62%;
+		border:2px solid white;
+	}
+	#pic19
+	{
+		height: 40%;
+		width: 20%;
+		float:left;
+		position:absolute;
+		top:287%;
+		left:19%;
+		border:2px solid white;
+	}
+	#pic20
+	{
+		height: 40%;
+		width: 20%;
+		float:left;
+		position:absolute;
+		top:287%;
+		left:40.5%;
+		border:2px solid white;
+	}
+	#pic21
+	{
+		height: 40%;
+		width: 20%;
+		float:left;
+		position:absolute;
+		top:287%;
+		left:62%;
+		border:2px solid white;
+	}
+	
+	#pic22
+	{
+		height: 40%;
+		width: 20%;
+		float:left;
+		position:absolute;
+		top:330.5%;
+		left:19%;
+		border:2px solid white;
+	}
+	#pic23
+	{
+		height: 40%;
+		width: 20%;
+		float:left;
+		position:absolute;
+		top:330.5%;
+		left:40.5%;
+		border:2px solid white;
+	}
+	#pic24
+	{
+		height: 40%;
+		width: 20%;
+		float:left;
+		position:absolute;
+		top:330.5%;
+		left:62%;
+		border:2px solid white;
+	}
+	
+</style>
+
+<body>
+
+<!--**********************Border**********************-->
+	<div id="border0">
+		<img id="borderimg" src="Photo Album\download.png"></img>
+	</div>
+<!--**********************HOME BUTTONS**********************-->
+<div id="d111">
+	<div id="logo">
+		<a href="home_1.html">
+			<img src="3logo-2947_grande.jpg" alt="source error"></img>
+		</a>
+	</div>
+	
+	<div id="menu">
+		<ul>
+			<li><a href="home_1.html">HOME</a></li>
+			<li><a href="">CONTACT</a></li>
+			<li><a href="Register_1.html">REGISTER</a></li>
+		<ul>
+	</div>
+	
+	<div id="welcome">
+		<h2>WELCOME</h2>
+	</div>
+</div>
+
+<!--**********************Photographers Details**********************-->
+<div id="backbuttonbox">
+<button id="backbuttonid" class="backbuttonclass"  onclick="window.location.href='list of photographers.html';">Back</button>
+</div>
+
+<div id="listid1">
+	<div id="view1">
+		<img class="photoview" src="Photo Album\Coimbatore\i2i\28.jpg" alt="Loading Error"></img>
+	</div>
+	
+	<div id="info1">
+		<h3>I2i Creative Studio</h3>
+		<p class="contact">+91 9152687972</p>
+		<p class="place">Door No 77, First Floor,<br> Chindamani Pudur,<br>  Ondipudur, Coimbator-641016.</p>
+		<p class="work">Photographers, Video Shooting Services</p>
+	</div>
+	
+</div>
+<!--**********************Border**********************-->
+	<div id="border1">
+		<img id="borderimg" src="Photo Album\download.png"></img>
+	</div>
+
+<!--********************** Pics**********************-->
+	<div id="allpics1">
+		<img id="pic1" src="Photo Album\Coimbatore\i2i\1.jpg" alt="File Mismatch">
+	</div>
+
+	<div id="allpics2">
+		<img id="pic2" src="Photo Album\Coimbatore\i2i\2.jpg" alt="File Mismatch">
+	</div>
+
+	<div id="allpics3">
+		<img id="pic3" src="Photo Album\Coimbatore\i2i\3.jpg" alt="File Mismatch">
+	</div>
+	
+	<div id="allpics4">
+		<img id="pic4" src="Photo Album\Coimbatore\i2i\4.jpg" alt="File Mismatch">
+	</div>
+	
+	<div id="allpics5">
+		<img id="pic5" src="Photo Album\Coimbatore\i2i\5.jpg" alt="File Mismatch">
+	</div>
+	
+	<div id="allpics6">
+		<img id="pic6" src="Photo Album\Coimbatore\i2i\6.jpg" alt="File Mismatch">
+	</div>
+	
+	<div id="allpics7">
+		<img id="pic7" src="Photo Album\Coimbatore\i2i\7.jpg" alt="File Mismatch">
+	</div>
+	
+	<div id="allpics8">
+		<img id="pic8" src="Photo Album\Coimbatore\i2i\8.jpg" alt="File Mismatch">
+	</div>
+	
+	<div id="allpics9">
+		<img id="pic9" src="Photo Album\Coimbatore\i2i\9.jpg" alt="File Mismatch">
+	</div>
+	
+<!--**********************More Button**********************-->
+	<button id="morebuttonid" class="morebuttonclass" onclick="validation()">MORE>></button>
+
+<!--**********************Back 2**********************-->
+	<div id="backbuttonbox2">
+		<button id="backbuttonid2" class="backbuttonclass2"  onclick="window.location.href='list of photographers.html';">Back</button>
+	</div>
+	
+<!--**********************Border - 2**********************-->
+	<div id="border2">
+		<img id="borderimg2" src="Photo Album\download.png"></img>
+	</div>
+
+<!--**********************More Images**********************-->
+
+<div id="morepics">	
+
+	<div id="allpics10">
+		<img id="pic10" src="Photo Album\Coimbatore\i2i\10.jpg" alt="File Mismatch">
+	</div>
+	
+	<div id="allpics11">
+		<img id="pic11" src="Photo Album\Coimbatore\i2i\11.jpg" alt="File Mismatch">
+	</div>
+	
+	<div id="allpics12">
+		<img id="pic12" src="Photo Album\Coimbatore\i2i\12.jpg" alt="File Mismatch">
+	</div>
+	
+	<div id="allpics13">
+		<img id="pic13" src="Photo Album\Coimbatore\i2i\Portrait\13.jpg" alt="File Mismatch">
+	</div>
+	
+	<div id="allpics14">
+		<img id="pic14" src="Photo Album\Coimbatore\i2i\Portrait\14.jpg" alt="File Mismatch">
+	</div>
+	
+	<div id="allpics15">
+		<img id="pic15" src="Photo Album\Coimbatore\i2i\Portrait\15.jpg" alt="File Mismatch">
+	</div>
+	
+	<div id="allpics16">
+		<img id="pic16" src="Photo Album\Coimbatore\i2i\Portrait\16.jpg" alt="File Mismatch">
+	</div>
+	
+	<div id="allpics17">
+		<img id="pic17" src="Photo Album\Coimbatore\i2i\Portrait\17.jpg" alt="File Mismatch">
+	</div>
+	
+	<div id="allpics18">
+		<img id="pic18" src="Photo Album\Coimbatore\i2i\Portrait\18.jpg" alt="File Mismatch">
+	</div>
+	
+	<div id="allpics19">
+		<img id="pic19" src="Photo Album\Coimbatore\i2i\Portrait\19.jpg" alt="File Mismatch">
+	</div>
+	
+	<div id="allpics20">
+		<img id="pic20" src="Photo Album\Coimbatore\i2i\Portrait\20.jpg" alt="File Mismatch">
+	</div>
+	
+	<div id="allpics21">
+		<img id="pic21" src="Photo Album\Coimbatore\i2i\Portrait\21.jpg" alt="File Mismatch">
+	</div>
+	
+	<div id="allpics22">
+		<img id="pic22" src="Photo Album\Coimbatore\i2i\Portrait\22.jpg" alt="File Mismatch">
+	</div>
+	
+	<div id="allpics23">
+		<img id="pic23" src="Photo Album\Coimbatore\i2i\Portrait\23.jpg" alt="File Mismatch">
+	</div>
+	
+	<div id="allpics24">
+		<img id="pic24" src="Photo Album\Coimbatore\i2i\Portrait\24.jpg" alt="File Mismatch">
+	</div>
+	
+
+<!--**********************Border - 3**********************-->
+	<div id="border3">
+		<img id="borderimg3" src="Photo Album\download.png"></img>
+	</div>
+<!--**********************Back 3**********************-->
+	<div id="backbuttonbox3">
+		<button id="backbuttonid3" class="backbuttonclass3"  onclick="window.location.href='list of photographers.html';">Back</button>
+	</div>
+</div>
+
+</body>
+
+
+<script>
+	function validation()
+	{
+		/*var style=document.createElement('style');
+		style.innerHTML='morepics{display:	}';*/
+		var x=document.getElementById("morepics");
+		var y=document.getElementById("border2");
+		if(x.style.display=="none")
+		{
+			x.style.display="block";
+			y.style.display="none";
+			
+		}
+		else
+		{
+			x.style.display="none";
+			y.style.display="block";
+		}
+	}
+</script>
+
+</html>

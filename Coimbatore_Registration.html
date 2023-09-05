@@ -1,0 +1,445 @@
+<html>
+    <head>
+      <script>
+			function validate()
+			{
+				if (document.getElementById("id-name").value == "")
+				{
+					document.getElementById("namespn").innerHTML="<b><center><font color=red>Please provide your Name!</font></center></b>";
+					document.MarriageRegistration.n-name.focus();
+					return false;
+				}
+				if (!isNaN(document.MarriageRegistration.n-name.value))
+				{
+					document.getElementById("namespn").innerHTML="<b><center><font color=red>Numbers are not vaild</font></center></b>";
+					document.MarriageRegistration.n-name.focus();
+					return false;
+				}
+				
+				if (document.getElementById("id-groomname").value == "")
+				{
+					document.getElementById("groomnamespn").innerHTML="<b><center><font color=red>Please provide your Groom Name!</font></center></b>";
+					document.MarriageRegistration.n-groomname.focus();
+					return false;
+				}
+				if (!isNaN(document.MarriageRegistration.n-groomname.value))
+				{
+					document.getElementById("groomnamespn").innerHTML="<b><center><font color=red>Numbers are not vaild</font></center></b>";
+					document.MarriageRegistration.n-groomname.focus();
+					return false;
+				}
+				
+				if (document.getElementById("id-bridename").value == "")
+				{
+					document.getElementById("bridenamespn").innerHTML="<b><center><font color=red>Please provide your Bride Name!</font></center></b>";
+					document.MarriageRegistration.n-bridename.focus();
+					return false;
+				}
+				if (!isNaN(document.MarriageRegistration.n-bridename.value))
+				{
+					document.getElementById("bridenamespn").innerHTML="<b><center><font color=red>Numbers are not vaild</font></center></b>";
+					document.MarriageRegistration.n-bridename.focus();
+					return false;
+				}
+				
+				if (document.getElementById("id-bridename").value == "")
+				{
+					document.getElementById("bridenamespn").innerHTML="<b><center><font color=red>Please provide your Address!</font></center></b>";
+					document.MarriageRegistration.n-bridename.focus();
+					return false;
+				}
+				
+				if(((document.MarriageRegistration.n-personaladdresspin.value.length)<6)||((document.MarriageRegistration.n-personaladdresspin.value.length)>6)||(!isNaN(document.MarriageRegistration.n-personaladdresspin.value)))
+				{
+					document.getElementById("personaladdresspinspn").innerHTML="<b><center><font color=red>Please provide your Pin in Correct Format!</font></center></b>";
+					document.MarriageRegistration.n-personaladdresspin.focus();
+					return false;
+				
+				}
+				
+				if (document.getElementById("City").value == "")
+				{
+					document.getElementById("Cityspn").innerHTML="<b><center><font color=red>Please provide your Address!</font></center></b>";
+					document.MarriageRegistration.City.focus();
+					return false;
+				}
+				return (true);			
+			}
+	
+       </script>
+	   
+	   
+	   
+	   <style>
+		
+					body
+					{
+						
+						background:#99FFFF;
+						//border:1px solid white;#151520
+					}
+
+			/*border-0*/
+					#border0  img
+					{
+						height:8px;
+						width:100%;
+						float:left;
+						position:absolute;
+						top:0%;
+						left:0%;
+					}
+
+			/*logo*/
+
+
+					#d1
+					{
+						height:12%;
+						background:black;
+						width:100%;
+						
+					}
+					
+					#logo
+					{
+					
+					}
+					#logo img
+					{
+						//float:left;
+						height:80px;
+						position:absolute;
+						top:px;
+						left:10px;
+					}
+					
+			/*menulist*/
+					#menu
+					{
+						position:absolute;
+						top:27px;
+						right:5px;
+					}
+					#menu ul
+					{
+						float:right;
+					}
+					#menu ul li
+					{	
+						display:inline;
+						padding:10px;
+						
+					}
+					#menu ul li a
+					{
+						font-family: fantasy;
+						text-decoration:none;
+						color:#e6e600;
+						font-size:25px;
+						//padding:20px;
+						//border:1px solid yellow;
+						
+					}
+					#menu ul li a:active
+					{
+						color:red;
+					}
+					#menu ul li a:hover
+					{
+						color:white;
+					}
+			/*welcome*/
+					#welcome
+					{
+						position:absolute;
+						top:2px;
+						left:28.5%;
+						color:#CC2244;
+						font-size:30px;
+						font-family:Verdana;
+					}
+	
+	
+//full-form
+			#tabler
+			{
+				background:yellow;
+			}
+			#full-form
+			{
+				background:#99FFFF;
+				position:relative;
+				top:15px;
+			}
+			
+	/*Button*/
+			.inner-reset-button
+			{
+				width:150px;
+				height:40px;
+				background: linear-gradient(to bottom,#499f43 0,#048003 100%);;
+				(to bottom,#490943 0,#040340 100%);
+				text-align: center;
+				color: #fff!important;
+				border-radius: 6px;
+				text-shadow: 1px 1px rgba(0,0,0,.5);
+				cursor: pointer;
+				order: 0;
+				outline: 0;
+				font-size:20px;
+			}
+			#reset-button
+			{
+				float:right;
+				position:absolute;
+				top:16%;
+				left:5%;
+			}
+			.inner-search-button
+			{
+				width:100px;
+				height:22px;
+				background: linear-gradient(to bottom,#499f43 0,#048003 100%);;
+				(to bottom,#490943 0,#040340 100%);
+				text-align: center;
+				color: #fff!important;
+				border-radius: 6px;
+				text-shadow: 1px 1px rgba(0,0,0,.5);
+				cursor: pointer;
+				order: 0;
+				outline: 0;
+				font-size:10px;
+			}
+			#search-button
+			{
+				
+				position:absolute;
+				float:right;
+				top:39.5%;
+				right:40%;
+			}
+			
+	</style>
+	
+	
+	
+    </head>
+   <body>
+<!--**********************Border**********************-->
+	<div id="border0">
+		<img id="borderimg" src="Photo Album\download.png"></img>
+	</div>
+<!--**********************HOME BUTTONS**********************-->
+<div id="d1">
+	<div id="logo">
+		<a href="home_1.html">
+			<img src="3logo-2947_grande.jpg"  alt="source error"></img>
+		</a>
+	</div>
+	
+	<div id="menu">
+		<ul>
+			<li><a href="Home_1.html">HOME</a></li>
+			<li><a href="contact_1.html">CONTACT</a></li>
+			<li><a href="Register_1.html">REGISTER</a></li>
+		<ul>
+	</div>
+	<div id="welcome">
+		<h2>Photo-shoot Registration</h2>
+	</div>
+</div>
+
+<!--**********************FORMS**********************-->
+
+<div id="full-form" >
+	<form name="MarriageRegistration" onsubmit="return (validate());" method="post">
+		<table id="tabler" width="50%" bgcolor="88DDFF" align="center"  cellpadding="5" cellspacing="30">
+			<tr>
+				<td>
+					<label id="name-lable"><b>Name:</label>
+				</td>
+				<td>
+					<div >
+						<input name="n-name" id="id-name" type="text"  placeholder="Enter Your Name"  >
+						<!--<span id="namespn"></span>-->
+					</div>
+				</td>
+			</tr>
+			<!--<span id="spn"></span>-->
+			
+			<tr>
+				<td>
+					<label id="groomname-lable"><b>Name of Groom:</label>
+				</td>
+				<td>
+					<div >
+						<input name="n-groomname" id="id-groomname" type="text" placeholder="Enter Groom's Name"  >
+						<span id="groomnamespn"></span>
+					</div>
+				</td>
+			</tr>
+			<!--<span id="spn"></span>-->
+			
+			<tr>
+				<td>
+					<label id="bridename-lable"><b>Name of Bride:</label>
+				</td>
+				<td>
+					<div >
+						<input name="n-bridename" id="id-bridename" type="text" placeholder="Enter Bride's Name"  >
+						<span id="bridenamespn"></span>
+					</div>
+				</td>
+			</tr>
+			<!--<span id="spn"></span>-->
+			
+			<tr>
+				<td>
+					<label id="personaladdress-lable"><b>Personal Address:</label>
+				</td>
+				<td>
+					<div >
+						<textarea name="n-personaladdress" id="id-personaladdress" type="text" placeholder="Enter Your Personal Address"
+						 cols=32  rows=4 ></textarea>
+						<span id="personaladdressspn"></span>
+					</div>
+				</td>
+			</tr>
+			<!--<span id="spn"></span>-->
+			
+			<tr>
+				<td>
+					<label id="personaladdresspin-lable"><b>Personal Address Pin:</label>
+				</td>
+				<td>
+					<div >
+						<input name="n-personaladdresspin" id="id-personaladdresspin" type="pin" placeholder="Enter Your Pin code"
+						  cols=32  rows=1 >
+						<span id="personaladdresspinspn"></span>
+					</div>
+				</td>
+			</tr>
+			<!--<span id="spn"></span>-->
+			
+			<tr>
+				<td>
+					<label id="studio-lable"><b>Select the District:</label>	
+				</td>
+				<td>
+					<select name="City" id="City">
+							<!--<option value="-1" selected>select..</option>
+							<option value="1" >Coimbatore</option>
+							<option value="2" >Ernakulam</option>
+							<option value="3" >Trichy</option>-->
+							<option value="1" >Coimbatore</option>
+					</select>
+				</td>
+						<span id="Cityspn"></span>
+			</tr>
+			<!--<tr>
+				<div id="search-button">
+					<button type="submit" class="inner-search-button" onclick="studio_display()">Search</button>
+				</div>
+			</tr>-->
+			<tr>
+				<td>
+					<label id="studio-lable1" ><b>Select the Studio:</label>	
+				</td>
+				<td>
+					<div name="n-studio1" id="id-studio1">
+						<input type="radio" name="studio" value="1" >A 2 S Fotography <br>
+						<input type="radio" name="studio" value="2">Bee Bee Videos<br>
+						<input type="radio" name="studio" value="3">I2i Creative Studio<br>
+						<input type="radio" name="studio" value="4">OHM Videos<br>
+						<input type="radio" name="studio" value="5">Short Smarts Photography<br>
+						<input type="radio" name="studio" value="6">Tricky Studios<br>
+						<input type="radio" name="studio" value="7">Vishnu Photography<br>
+						
+						<!--<span id=spn></span>-->
+					</div>
+				
+					<!--<div name="n-studio2" id="id-studio2" style="display:none;">
+						<input type="radio" name="studio" value="1">BigShot Photos <br>
+						<input type="radio" name="studio" value="2">Ganesh Studio<br>
+						<input type="radio" name="studio" value="3">Knots N Clicks<br>
+						<input type="radio" name="studio" value="4">Omega Creations<br>
+						<input type="radio" name="studio" value="5">Pepper Green Wedding<br>
+						<input type="radio" name="studio" value="6">Saga Studio<br>
+						<input type="radio" name="studio" value="7">Sruthy Studio<br>
+						
+						<!--<span id=spn></span>
+					</div>-->
+				</td>
+			</tr>
+			
+			
+			<tr>
+				<td>
+					<label id="nodays-lable"><b>Number of Days:</label>
+				</td>
+				<td>
+					<div name="n-nodays" id="id-nodays">
+						<input type="number" placeholder="Enter Number of days" >
+						<span id="nodaysspn"></span>
+					</div>
+				</td>
+			</tr>
+			<!--<span id=spn></span>-->
+			
+			<tr>
+				<td>
+					<label id="service-lable"><b>Services Required:</label>
+				</td>
+				<td>
+					<div name="n-service" id="id-service">  
+						<input type="checkbox" name="service1" value="Pre-Wedding Shoot">Pre-Wedding Shoot</input><br>
+						<input type="checkbox" name="service2" value="Candid Photography">Candid Photography</input><br>
+						<input type="checkbox" name="service3" value="Traditional Photography">Traditional Photography<br>
+						<input type="checkbox" name="service4" value="Cinematic Video">Cinematic Video<br>
+						<input type="checkbox" name="service5" value="Traditional Video">Traditional Video<br>
+						<input type="checkbox" name="service6" value="Photo Album">Photo Album<br>
+						<span id="servicespn"></span>
+					</div>
+				</td>
+			</tr>
+			<!--<span id=spn></span>-->
+			
+			<tr>
+				<td>
+					<label id="budget-lable"><b>Services Required:</label>	
+				</td>
+				<td>
+					<div name="n-budget" id="id-budget">
+						<input type="radio" name="budget" value="">Below 50K <br>
+						<input type="radio" name="budget" value="">0.5L-1L <br>
+						<input type="radio" name="budget" value="">1L-1.5L <br>
+						<input type="radio" name="budget" value="">1.5L-2L <br>
+						<input type="radio" name="budget" value="">Above 2L <br>
+						<span id="budgetspn"></span>
+					</div>
+				</td>
+			</tr>
+			<!--<span id=spn></span>-->
+			
+			
+			<tr>
+				<td>
+					<center><button class="inner-reset-button" onclick="window.location.href='Wedding_Registration.html';"><b>Reset</button>
+				</td>
+				<td colspan="2">
+					<!--<center><input  type="submit" value="Submit Form" onclick="validate()"/>-->
+					<button class="inner-reset-button" type="submit" value="Submit Form" onclick="validate()"><b>Submit</button>
+				</td>
+			</tr>
+			
+		</table>	
+	</form>
+
+</div>
+<div id="reset-button">
+		<button class="inner-reset-button" onclick="window.location.href='Coimbatore_Registration.html';"><b>Reset</button>
+</div>
+   </body>
+      
+</html>
